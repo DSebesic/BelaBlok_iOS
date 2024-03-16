@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86663F502BA5CE1D00C92A4F /* BelaBlokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F4F2BA5CE1D00C92A4F /* BelaBlokApp.swift */; };
+		86663F542BA5CE2100C92A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86663F532BA5CE2100C92A4F /* Assets.xcassets */; };
+		86663F572BA5CE2100C92A4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86663F562BA5CE2100C92A4F /* Preview Assets.xcassets */; };
+		86663F612BA5CE2100C92A4F /* BelaBlokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F602BA5CE2100C92A4F /* BelaBlokTests.swift */; };
+		86663F6B2BA5CE2100C92A4F /* BelaBlokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F6A2BA5CE2100C92A4F /* BelaBlokUITests.swift */; };
+		86663F6D2BA5CE2100C92A4F /* BelaBlokUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F6C2BA5CE2100C92A4F /* BelaBlokUITestsLaunchTests.swift */; };
+		86663F7F2BA5CEC500C92A4F /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F7B2BA5CEC500C92A4F /* AppAction.swift */; };
+		86663F802BA5CEC500C92A4F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F7C2BA5CEC500C92A4F /* AppView.swift */; };
+		86663F812BA5CEC500C92A4F /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F7D2BA5CEC500C92A4F /* AppReducer.swift */; };
+		86663F822BA5CEC500C92A4F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F7E2BA5CEC500C92A4F /* AppState.swift */; };
+		86663F852BA5D11F00C92A4F /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 86663F842BA5D11F00C92A4F /* ComposableArchitecture */; };
+		86663F8B2BA5D2E400C92A4F /* HomeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F872BA5D2E400C92A4F /* HomeAction.swift */; };
+		86663F8C2BA5D2E400C92A4F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F882BA5D2E400C92A4F /* HomeView.swift */; };
+		86663F8D2BA5D2E400C92A4F /* HomeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F892BA5D2E400C92A4F /* HomeReducer.swift */; };
+		86663F8E2BA5D2E400C92A4F /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F8A2BA5D2E400C92A4F /* HomeState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86663F5D2BA5CE2100C92A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86663F442BA5CE1D00C92A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86663F4B2BA5CE1D00C92A4F;
+			remoteInfo = BelaBlok;
+		};
+		86663F672BA5CE2100C92A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86663F442BA5CE1D00C92A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86663F4B2BA5CE1D00C92A4F;
+			remoteInfo = BelaBlok;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86663F4C2BA5CE1D00C92A4F /* BelaBlok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BelaBlok.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86663F4F2BA5CE1D00C92A4F /* BelaBlokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelaBlokApp.swift; sourceTree = "<group>"; };
+		86663F532BA5CE2100C92A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86663F562BA5CE2100C92A4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86663F5C2BA5CE2100C92A4F /* BelaBlokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelaBlokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86663F602BA5CE2100C92A4F /* BelaBlokTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelaBlokTests.swift; sourceTree = "<group>"; };
+		86663F662BA5CE2100C92A4F /* BelaBlokUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BelaBlokUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86663F6A2BA5CE2100C92A4F /* BelaBlokUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelaBlokUITests.swift; sourceTree = "<group>"; };
+		86663F6C2BA5CE2100C92A4F /* BelaBlokUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelaBlokUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86663F7B2BA5CEC500C92A4F /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		86663F7C2BA5CEC500C92A4F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		86663F7D2BA5CEC500C92A4F /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		86663F7E2BA5CEC500C92A4F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		86663F872BA5D2E400C92A4F /* HomeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAction.swift; sourceTree = "<group>"; };
+		86663F882BA5D2E400C92A4F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		86663F892BA5D2E400C92A4F /* HomeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReducer.swift; sourceTree = "<group>"; };
+		86663F8A2BA5D2E400C92A4F /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86663F492BA5CE1D00C92A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86663F852BA5D11F00C92A4F /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86663F592BA5CE2100C92A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86663F632BA5CE2100C92A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86663F432BA5CE1D00C92A4F = {
+			isa = PBXGroup;
+			children = (
+				86663F4E2BA5CE1D00C92A4F /* BelaBlok */,
+				86663F5F2BA5CE2100C92A4F /* BelaBlokTests */,
+				86663F692BA5CE2100C92A4F /* BelaBlokUITests */,
+				86663F4D2BA5CE1D00C92A4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86663F4D2BA5CE1D00C92A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86663F4C2BA5CE1D00C92A4F /* BelaBlok.app */,
+				86663F5C2BA5CE2100C92A4F /* BelaBlokTests.xctest */,
+				86663F662BA5CE2100C92A4F /* BelaBlokUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86663F4E2BA5CE1D00C92A4F /* BelaBlok */ = {
+			isa = PBXGroup;
+			children = (
+				86663F792BA5CEA000C92A4F /* Features */,
+				86663F4F2BA5CE1D00C92A4F /* BelaBlokApp.swift */,
+				86663F532BA5CE2100C92A4F /* Assets.xcassets */,
+				86663F552BA5CE2100C92A4F /* Preview Content */,
+			);
+			path = BelaBlok;
+			sourceTree = "<group>";
+		};
+		86663F552BA5CE2100C92A4F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86663F562BA5CE2100C92A4F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86663F5F2BA5CE2100C92A4F /* BelaBlokTests */ = {
+			isa = PBXGroup;
+			children = (
+				86663F602BA5CE2100C92A4F /* BelaBlokTests.swift */,
+			);
+			path = BelaBlokTests;
+			sourceTree = "<group>";
+		};
+		86663F692BA5CE2100C92A4F /* BelaBlokUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86663F6A2BA5CE2100C92A4F /* BelaBlokUITests.swift */,
+				86663F6C2BA5CE2100C92A4F /* BelaBlokUITestsLaunchTests.swift */,
+			);
+			path = BelaBlokUITests;
+			sourceTree = "<group>";
+		};
+		86663F792BA5CEA000C92A4F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				86663F862BA5D2D400C92A4F /* HomeFeature */,
+				86663F7A2BA5CEA900C92A4F /* AppFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		86663F7A2BA5CEA900C92A4F /* AppFeature */ = {
+			isa = PBXGroup;
+			children = (
+				86663F7B2BA5CEC500C92A4F /* AppAction.swift */,
+				86663F7C2BA5CEC500C92A4F /* AppView.swift */,
+				86663F7D2BA5CEC500C92A4F /* AppReducer.swift */,
+				86663F7E2BA5CEC500C92A4F /* AppState.swift */,
+			);
+			path = AppFeature;
+			sourceTree = "<group>";
+		};
+		86663F862BA5D2D400C92A4F /* HomeFeature */ = {
+			isa = PBXGroup;
+			children = (
+				86663F872BA5D2E400C92A4F /* HomeAction.swift */,
+				86663F882BA5D2E400C92A4F /* HomeView.swift */,
+				86663F892BA5D2E400C92A4F /* HomeReducer.swift */,
+				86663F8A2BA5D2E400C92A4F /* HomeState.swift */,
+			);
+			path = HomeFeature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86663F4B2BA5CE1D00C92A4F /* BelaBlok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86663F702BA5CE2100C92A4F /* Build configuration list for PBXNativeTarget "BelaBlok" */;
+			buildPhases = (
+				86663F482BA5CE1D00C92A4F /* Sources */,
+				86663F492BA5CE1D00C92A4F /* Frameworks */,
+				86663F4A2BA5CE1D00C92A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BelaBlok;
+			packageProductDependencies = (
+				86663F842BA5D11F00C92A4F /* ComposableArchitecture */,
+			);
+			productName = BelaBlok;
+			productReference = 86663F4C2BA5CE1D00C92A4F /* BelaBlok.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86663F5B2BA5CE2100C92A4F /* BelaBlokTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86663F732BA5CE2100C92A4F /* Build configuration list for PBXNativeTarget "BelaBlokTests" */;
+			buildPhases = (
+				86663F582BA5CE2100C92A4F /* Sources */,
+				86663F592BA5CE2100C92A4F /* Frameworks */,
+				86663F5A2BA5CE2100C92A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86663F5E2BA5CE2100C92A4F /* PBXTargetDependency */,
+			);
+			name = BelaBlokTests;
+			productName = BelaBlokTests;
+			productReference = 86663F5C2BA5CE2100C92A4F /* BelaBlokTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86663F652BA5CE2100C92A4F /* BelaBlokUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86663F762BA5CE2100C92A4F /* Build configuration list for PBXNativeTarget "BelaBlokUITests" */;
+			buildPhases = (
+				86663F622BA5CE2100C92A4F /* Sources */,
+				86663F632BA5CE2100C92A4F /* Frameworks */,
+				86663F642BA5CE2100C92A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86663F682BA5CE2100C92A4F /* PBXTargetDependency */,
+			);
+			name = BelaBlokUITests;
+			productName = BelaBlokUITests;
+			productReference = 86663F662BA5CE2100C92A4F /* BelaBlokUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86663F442BA5CE1D00C92A4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					86663F4B2BA5CE1D00C92A4F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					86663F5B2BA5CE2100C92A4F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 86663F4B2BA5CE1D00C92A4F;
+					};
+					86663F652BA5CE2100C92A4F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 86663F4B2BA5CE1D00C92A4F;
+					};
+				};
+			};
+			buildConfigurationList = 86663F472BA5CE1D00C92A4F /* Build configuration list for PBXProject "BelaBlok" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86663F432BA5CE1D00C92A4F;
+			packageReferences = (
+				86663F832BA5D11F00C92A4F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 86663F4D2BA5CE1D00C92A4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86663F4B2BA5CE1D00C92A4F /* BelaBlok */,
+				86663F5B2BA5CE2100C92A4F /* BelaBlokTests */,
+				86663F652BA5CE2100C92A4F /* BelaBlokUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86663F4A2BA5CE1D00C92A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86663F572BA5CE2100C92A4F /* Preview Assets.xcassets in Resources */,
+				86663F542BA5CE2100C92A4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86663F5A2BA5CE2100C92A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86663F642BA5CE2100C92A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86663F482BA5CE1D00C92A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86663F7F2BA5CEC500C92A4F /* AppAction.swift in Sources */,
+				86663F822BA5CEC500C92A4F /* AppState.swift in Sources */,
+				86663F8B2BA5D2E400C92A4F /* HomeAction.swift in Sources */,
+				86663F502BA5CE1D00C92A4F /* BelaBlokApp.swift in Sources */,
+				86663F8C2BA5D2E400C92A4F /* HomeView.swift in Sources */,
+				86663F8E2BA5D2E400C92A4F /* HomeState.swift in Sources */,
+				86663F802BA5CEC500C92A4F /* AppView.swift in Sources */,
+				86663F812BA5CEC500C92A4F /* AppReducer.swift in Sources */,
+				86663F8D2BA5D2E400C92A4F /* HomeReducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86663F582BA5CE2100C92A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86663F612BA5CE2100C92A4F /* BelaBlokTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86663F622BA5CE2100C92A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86663F6D2BA5CE2100C92A4F /* BelaBlokUITestsLaunchTests.swift in Sources */,
+				86663F6B2BA5CE2100C92A4F /* BelaBlokUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86663F5E2BA5CE2100C92A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86663F4B2BA5CE1D00C92A4F /* BelaBlok */;
+			targetProxy = 86663F5D2BA5CE2100C92A4F /* PBXContainerItemProxy */;
+		};
+		86663F682BA5CE2100C92A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86663F4B2BA5CE1D00C92A4F /* BelaBlok */;
+			targetProxy = 86663F672BA5CE2100C92A4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		86663F6E2BA5CE2100C92A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86663F6F2BA5CE2100C92A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86663F712BA5CE2100C92A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BelaBlok/Preview Content\"";
+				DEVELOPMENT_TEAM = HK9D2MF652;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Flabbergast.BelaBlok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86663F722BA5CE2100C92A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BelaBlok/Preview Content\"";
+				DEVELOPMENT_TEAM = HK9D2MF652;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Flabbergast.BelaBlok;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86663F742BA5CE2100C92A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK9D2MF652;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Flabbergast.BelaBlokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BelaBlok.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BelaBlok";
+			};
+			name = Debug;
+		};
+		86663F752BA5CE2100C92A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK9D2MF652;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Flabbergast.BelaBlokTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BelaBlok.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BelaBlok";
+			};
+			name = Release;
+		};
+		86663F772BA5CE2100C92A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK9D2MF652;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Flabbergast.BelaBlokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BelaBlok;
+			};
+			name = Debug;
+		};
+		86663F782BA5CE2100C92A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK9D2MF652;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Flabbergast.BelaBlokUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BelaBlok;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86663F472BA5CE1D00C92A4F /* Build configuration list for PBXProject "BelaBlok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86663F6E2BA5CE2100C92A4F /* Debug */,
+				86663F6F2BA5CE2100C92A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86663F702BA5CE2100C92A4F /* Build configuration list for PBXNativeTarget "BelaBlok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86663F712BA5CE2100C92A4F /* Debug */,
+				86663F722BA5CE2100C92A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86663F732BA5CE2100C92A4F /* Build configuration list for PBXNativeTarget "BelaBlokTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86663F742BA5CE2100C92A4F /* Debug */,
+				86663F752BA5CE2100C92A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86663F762BA5CE2100C92A4F /* Build configuration list for PBXNativeTarget "BelaBlokUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86663F772BA5CE2100C92A4F /* Debug */,
+				86663F782BA5CE2100C92A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86663F832BA5D11F00C92A4F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86663F842BA5D11F00C92A4F /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86663F832BA5D11F00C92A4F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 86663F442BA5CE1D00C92A4F /* Project object */;
+}
