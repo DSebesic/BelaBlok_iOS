@@ -13,7 +13,7 @@ public extension MatchReducer {
             ZStack {
                 Color.backgroundColorDefault.ignoresSafeArea()
                 VStack {
-                    ScrollView {
+                    ScrollView(.vertical, showsIndicators: false) {
                         VStack {
                             ForEach(store.state.games, id: \.self) { game in
                                 GameCard(game: game)
@@ -26,6 +26,7 @@ public extension MatchReducer {
                     }) {
                         Text("Add game")
                     }
+                    .buttonStyle(.plain)
                 }
             }
         }

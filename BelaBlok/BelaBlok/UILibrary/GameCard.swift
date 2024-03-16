@@ -11,10 +11,15 @@ public struct GameCard: View {
     let game: GameModel
     public var body: some View {
         HStack {
+            Spacer()
             Text("\(game.miPoints)")
-            Text("v")
+            Spacer()
             Text("\(game.viPoints)")
+            Spacer()
         }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+        .font(.system(size: 40))
     }
 }
 

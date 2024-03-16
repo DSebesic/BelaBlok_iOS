@@ -11,6 +11,8 @@ struct AppReducer {
             switch action {
             case .homeAction(.newMatchTapped):
                 state.path.append(.newMatchScreen(MatchReducer.State()))
+            case .path(.element(id: _, action: .newMatchScreen(.newGameTapped))):
+                state.path.append(.calculatorScreen(CalculatorReducer.State()))
             default:
                 break
             }
@@ -24,5 +26,6 @@ extension AppReducer {
     @Reducer(state:.equatable)
     public enum Path {
         case newMatchScreen(MatchReducer)
+        case calculatorScreen(CalculatorReducer)
     }
 }

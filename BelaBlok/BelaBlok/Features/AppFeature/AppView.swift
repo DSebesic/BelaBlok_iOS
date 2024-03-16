@@ -13,6 +13,8 @@ extension AppReducer {
                 switch store.case {
                 case .newMatchScreen(let store):
                     MatchReducer.MatchView(store: store)
+                case .calculatorScreen(let store):
+                    CalculatorReducer.CalculatorView(store: store)
                 }
             }
         }

@@ -28,6 +28,11 @@
 		86663F972BA5DD2500C92A4F /* MatchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F932BA5DD2500C92A4F /* MatchState.swift */; };
 		86663F9A2BA60E4F00C92A4F /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F992BA60E4F00C92A4F /* GameModel.swift */; };
 		86663F9D2BA6109700C92A4F /* GameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F9C2BA6109700C92A4F /* GameCard.swift */; };
+		86663FA32BA617AF00C92A4F /* CalculatorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F9F2BA617AF00C92A4F /* CalculatorAction.swift */; };
+		86663FA42BA617AF00C92A4F /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663FA02BA617AF00C92A4F /* CalculatorView.swift */; };
+		86663FA52BA617AF00C92A4F /* CalculatorReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663FA12BA617AF00C92A4F /* CalculatorReducer.swift */; };
+		86663FA62BA617AF00C92A4F /* CalculatorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663FA22BA617AF00C92A4F /* CalculatorState.swift */; };
+		86663FA82BA61CBB00C92A4F /* NumKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663FA72BA61CBB00C92A4F /* NumKeypad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		86663F932BA5DD2500C92A4F /* MatchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchState.swift; sourceTree = "<group>"; };
 		86663F992BA60E4F00C92A4F /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		86663F9C2BA6109700C92A4F /* GameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCard.swift; sourceTree = "<group>"; };
+		86663F9F2BA617AF00C92A4F /* CalculatorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAction.swift; sourceTree = "<group>"; };
+		86663FA02BA617AF00C92A4F /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		86663FA12BA617AF00C92A4F /* CalculatorReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorReducer.swift; sourceTree = "<group>"; };
+		86663FA22BA617AF00C92A4F /* CalculatorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorState.swift; sourceTree = "<group>"; };
+		86663FA72BA61CBB00C92A4F /* NumKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumKeypad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,8 @@
 		86663F4E2BA5CE1D00C92A4F /* BelaBlok */ = {
 			isa = PBXGroup;
 			children = (
+				86663F9B2BA6107800C92A4F /* UILibrary */,
+				86663F982BA60E3700C92A4F /* Models */,
 				86663F792BA5CEA000C92A4F /* Features */,
 				86663F4F2BA5CE1D00C92A4F /* BelaBlokApp.swift */,
 				86663F532BA5CE2100C92A4F /* Assets.xcassets */,
@@ -158,8 +170,7 @@
 		86663F792BA5CEA000C92A4F /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				86663F9B2BA6107800C92A4F /* UILibrary */,
-				86663F982BA60E3700C92A4F /* Models */,
+				86663F9E2BA6179500C92A4F /* CalculatorFeature */,
 				86663F8F2BA5DD0D00C92A4F /* MatchFeature */,
 				86663F862BA5D2D400C92A4F /* HomeFeature */,
 				86663F7A2BA5CEA900C92A4F /* AppFeature */,
@@ -212,8 +223,20 @@
 			isa = PBXGroup;
 			children = (
 				86663F9C2BA6109700C92A4F /* GameCard.swift */,
+				86663FA72BA61CBB00C92A4F /* NumKeypad.swift */,
 			);
 			path = UILibrary;
+			sourceTree = "<group>";
+		};
+		86663F9E2BA6179500C92A4F /* CalculatorFeature */ = {
+			isa = PBXGroup;
+			children = (
+				86663F9F2BA617AF00C92A4F /* CalculatorAction.swift */,
+				86663FA02BA617AF00C92A4F /* CalculatorView.swift */,
+				86663FA12BA617AF00C92A4F /* CalculatorReducer.swift */,
+				86663FA22BA617AF00C92A4F /* CalculatorState.swift */,
+			);
+			path = CalculatorFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86663FA82BA61CBB00C92A4F /* NumKeypad.swift in Sources */,
+				86663FA52BA617AF00C92A4F /* CalculatorReducer.swift in Sources */,
+				86663FA42BA617AF00C92A4F /* CalculatorView.swift in Sources */,
 				86663F7F2BA5CEC500C92A4F /* AppAction.swift in Sources */,
 				86663F972BA5DD2500C92A4F /* MatchState.swift in Sources */,
 				86663F822BA5CEC500C92A4F /* AppState.swift in Sources */,
@@ -361,9 +387,11 @@
 				86663F962BA5DD2500C92A4F /* MatchReducer.swift in Sources */,
 				86663F502BA5CE1D00C92A4F /* BelaBlokApp.swift in Sources */,
 				86663F8C2BA5D2E400C92A4F /* HomeView.swift in Sources */,
+				86663FA32BA617AF00C92A4F /* CalculatorAction.swift in Sources */,
 				86663F8E2BA5D2E400C92A4F /* HomeState.swift in Sources */,
 				86663F9D2BA6109700C92A4F /* GameCard.swift in Sources */,
 				86663F802BA5CEC500C92A4F /* AppView.swift in Sources */,
+				86663FA62BA617AF00C92A4F /* CalculatorState.swift in Sources */,
 				86663F812BA5CEC500C92A4F /* AppReducer.swift in Sources */,
 				86663F8D2BA5D2E400C92A4F /* HomeReducer.swift in Sources */,
 				86663F952BA5DD2500C92A4F /* MatchView.swift in Sources */,
