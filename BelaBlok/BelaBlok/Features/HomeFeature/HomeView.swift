@@ -10,10 +10,18 @@ public extension HomeReducer {
         }
         
         public var body: some View {
-            Text("HomeView")
-                .onAppear {
-                    store.send(.viewAppeared)
+            VStack {
+                Image(systemName: "figure.mixed.cardio")
+                ForEach(HomeReducer.State.Buttons.allCases, id: \.self) { button in
+                    Button(action: {
+                        store.send(.newMatchTapped)
+                    }) {
+                        Text(button.title)
+                    }
+                    .buttonStyle(.plain)
+                    
                 }
+            }
         }
     }
 }

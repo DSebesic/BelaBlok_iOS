@@ -9,18 +9,20 @@ struct AppReducer {
         }
         Reduce { state, action in
             switch action {
-            case .path(_):
-                break
-            case .homeAction(_):
+            case .homeAction(.newMatchTapped):
+                state.path.append(.newMatchScreen(MatchReducer.State()))
+            default:
                 break
             }
             return .none
         }
+        .forEach(\.path, action: \.path)
     }
 }
 
 extension AppReducer {
     @Reducer(state:.equatable)
     public enum Path {
+        case newMatchScreen(MatchReducer)
     }
 }

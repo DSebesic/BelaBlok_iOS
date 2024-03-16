@@ -2,8 +2,11 @@ import ComposableArchitecture
 
 public extension HomeReducer {
     @CasePathable
-    enum Action: BindableAction {
+    enum Action {
         case viewAppeared
-        case binding(BindingAction<State>)
+        
+        case newMatchTapped
+        case savedMatchesTapped
+        case savedUsersTapped
     }
 }
