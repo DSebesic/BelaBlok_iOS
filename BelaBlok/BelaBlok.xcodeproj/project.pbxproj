@@ -26,6 +26,8 @@
 		86663F952BA5DD2500C92A4F /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F912BA5DD2500C92A4F /* MatchView.swift */; };
 		86663F962BA5DD2500C92A4F /* MatchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F922BA5DD2500C92A4F /* MatchReducer.swift */; };
 		86663F972BA5DD2500C92A4F /* MatchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F932BA5DD2500C92A4F /* MatchState.swift */; };
+		86663F9A2BA60E4F00C92A4F /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F992BA60E4F00C92A4F /* GameModel.swift */; };
+		86663F9D2BA6109700C92A4F /* GameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86663F9C2BA6109700C92A4F /* GameCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		86663F912BA5DD2500C92A4F /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		86663F922BA5DD2500C92A4F /* MatchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchReducer.swift; sourceTree = "<group>"; };
 		86663F932BA5DD2500C92A4F /* MatchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchState.swift; sourceTree = "<group>"; };
+		86663F992BA60E4F00C92A4F /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		86663F9C2BA6109700C92A4F /* GameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 		86663F792BA5CEA000C92A4F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				86663F9B2BA6107800C92A4F /* UILibrary */,
+				86663F982BA60E3700C92A4F /* Models */,
 				86663F8F2BA5DD0D00C92A4F /* MatchFeature */,
 				86663F862BA5D2D400C92A4F /* HomeFeature */,
 				86663F7A2BA5CEA900C92A4F /* AppFeature */,
@@ -192,6 +198,22 @@
 				86663F932BA5DD2500C92A4F /* MatchState.swift */,
 			);
 			path = MatchFeature;
+			sourceTree = "<group>";
+		};
+		86663F982BA60E3700C92A4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86663F992BA60E4F00C92A4F /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86663F9B2BA6107800C92A4F /* UILibrary */ = {
+			isa = PBXGroup;
+			children = (
+				86663F9C2BA6109700C92A4F /* GameCard.swift */,
+			);
+			path = UILibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,10 +357,12 @@
 				86663F822BA5CEC500C92A4F /* AppState.swift in Sources */,
 				86663F8B2BA5D2E400C92A4F /* HomeAction.swift in Sources */,
 				86663F942BA5DD2500C92A4F /* MatchAction.swift in Sources */,
+				86663F9A2BA60E4F00C92A4F /* GameModel.swift in Sources */,
 				86663F962BA5DD2500C92A4F /* MatchReducer.swift in Sources */,
 				86663F502BA5CE1D00C92A4F /* BelaBlokApp.swift in Sources */,
 				86663F8C2BA5D2E400C92A4F /* HomeView.swift in Sources */,
 				86663F8E2BA5D2E400C92A4F /* HomeState.swift in Sources */,
+				86663F9D2BA6109700C92A4F /* GameCard.swift in Sources */,
 				86663F802BA5CEC500C92A4F /* AppView.swift in Sources */,
 				86663F812BA5CEC500C92A4F /* AppReducer.swift in Sources */,
 				86663F8D2BA5D2E400C92A4F /* HomeReducer.swift in Sources */,

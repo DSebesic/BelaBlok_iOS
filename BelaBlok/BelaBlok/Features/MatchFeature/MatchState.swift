@@ -1,7 +1,9 @@
 import ComposableArchitecture
+import Foundation
 
-public extension MatchReducer {
-    struct State: Equatable {
-        public init() {}
+extension MatchReducer {
+    @ObservableState
+    public struct State: Equatable {
+        var games: [GameModel] = []
     }
 }

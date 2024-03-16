@@ -10,16 +10,19 @@ public extension HomeReducer {
         }
         
         public var body: some View {
-            VStack {
-                Image(systemName: "figure.mixed.cardio")
-                ForEach(HomeReducer.State.Buttons.allCases, id: \.self) { button in
-                    Button(action: {
-                        store.send(.newMatchTapped)
-                    }) {
-                        Text(button.title)
+            ZStack {
+                Color.backgroundColorDefault.ignoresSafeArea()
+                VStack {
+                    Image(systemName: "figure.mixed.cardio")
+                    ForEach(HomeReducer.State.Buttons.allCases, id: \.self) { button in
+                        Button(action: {
+                            store.send(.newMatchTapped)
+                        }) {
+                            Text(button.title)
+                        }
+                        .buttonStyle(.plain)
+                        
                     }
-                    .buttonStyle(.plain)
-                    
                 }
             }
         }

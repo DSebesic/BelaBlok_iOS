@@ -5,12 +5,29 @@ public extension MatchReducer {
     struct MatchView: View {
         let store: Store<State, Action>
         
-        public init(store: Store<State, Action>) {
+        init(store: Store<State, Action>) {
             self.store = store
         }
 
         public var body: some View {
-            Text("NEW MATCH")
+            ZStack {
+                Color.backgroundColorDefault.ignoresSafeArea()
+                VStack {
+                    ScrollView {
+                        VStack {
+                            ForEach(store.state.games, id: \.self) { game in
+                                GameCard(game: game)
+                            }
+                        }
+                    }
+                    Divider()
+                    Button(action: {
+                        store.send(.newGameTapped)
+                    }) {
+                        Text("Add game")
+                    }
+                }
+            }
         }
     }
 }

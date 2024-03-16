@@ -8,6 +8,8 @@ public struct MatchReducer: Reducer {
             switch action {
                 case .viewAppeared:
                 break
+            case .newGameTapped:
+                state.games.append(GameModel())
             }
             return .none
         }
